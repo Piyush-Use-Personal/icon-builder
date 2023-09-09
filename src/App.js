@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+
+// import IconList from "./IconList";
+import Iconsearch from "./Iconsearch";
+
+
+
 
 function App() {
+
+  // const [icon, setIcon] = useState([])
+
+  // useEffect(() => {
+  //   const fetchIcon = async () => {
+  //     const response = await fetch('icon.json')
+  //     const data = await response.json()
+  //     setIcon(data)
+  //   }
+  //   fetchIcon()
+  // }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <IconList icons={icon} /> */}
+      <Iconsearch/>
     </div>
   );
 }
